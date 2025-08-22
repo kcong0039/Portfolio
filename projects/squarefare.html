@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SquareFare | Kevin Cong</title>
+  <link href="/css/styles.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="/index.html">Kevin Cong</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
+          <!-- If you add id="projects" to the tiles section on Home, use /index.html#projects -->
+          <li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header with dim overlay (same style as About) -->
+  <header class="py-5 bg-image-full" style="background-image: url('../assets/SFfood.png'); position: relative;">
+    <div style="position: absolute; inset: 0; background-color: rgba(0,0,0,0.5);"></div>
+    <div class="text-center my-5" style="position: relative; z-index: 1;">
+      <h1 class="text-white fs-1 fw-bolder">SquareFare</h1>
+      <p class="text-white-50">Software Engineer Intern</p>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main class="py-5">
+    <div class="container col-lg-9">
+
+      <!-- Overview -->
+      <section class="mb-5">
+        <h2>Overview</h2>
+        <p class="lead">
+          Built a barcode driven prep and plating system that converts planned meals into scannable stickers and live ingredient breakdowns per station. A cook scans a label and instantly sees exact prep quantities for that meal, replacing paper sheets and enabling smooth scaling during busy weeks.
+        </p>
+        <p>
+          Also developed a customer website where users select meals a la carte or via subscriptions. Selections sync to a central spreadsheet and production view, removing manual data entry and reducing order errors. Together, these tools turned a manual process into a reliable, trackable workflow that supports growth.
+        </p>
+      </section>
+
+      <!-- Role and Stack -->
+      <section class="mb-5">
+        <h3>Role and Stack</h3>
+        <ul>
+          <li><strong>Role:</strong> Software Engineer Intern</li>
+          <li><strong>Focus:</strong> barcode generation, station logic, real time prep quantities, order intake automation, error reduction</li>
+          <li><strong>Stack:</strong> Python, Flask, JavaScript, React, Google Sheets API, SQLite, QR and barcode libraries</li>
+          <li><strong>Ops:</strong> structured data model for meals, components, and stations; scan flow and audit trail</li>
+        </ul>
+      </section>
+
+      <!-- Features -->
+      <section class="mb-5">
+        <h3>Key Features</h3>
+        <ul>
+          <li>Sticker and barcode generator for each planned meal with order and component metadata.</li>
+          <li>Scan to prep view that shows exact ingredient quantities for the current station and meal.</li>
+          <li>Kitchen dashboard with live counts, flags for low inventory, and error checks.</li>
+          <li>Customer site for a la carte and subscriptions that syncs selections directly into production.</li>
+          <li>Data validation and reconciliation to prevent duplicates and catch mismatches early.</li>
+        </ul>
+      </section>
+
+      <!-- Live site -->
+      <section class="mb-5">
+        <h3>Live Site</h3>
+        <p>
+          Internal plating website:
+          <a href="https://plating.getsquarefare.com" target="_blank" rel="noopener">plating.getsquarefare.com</a>
+        </p>
+      </section>
+
+      <!-- Screenshots -->
+      <section class="mb-4">
+        <h3>Screenshots</h3>
+        <div class="row g-3">
+          <div class="col-12 col-md-6">
+            <figure class="card">
+              <img src="/assets/squarefare-1.png" class="card-img-top" alt="Customer selection page">
+              <figcaption class="card-body py-2"><small class="text-muted">Customer selection page</small></figcaption>
+            </figure>
+          </div>
+          <div class="col-12 col-md-6">
+            <figure class="card">
+              <img src="/assets/squarefare-2.png" class="card-img-top" alt="Barcode and sticker generator">
+              <figcaption class="card-body py-2"><small class="text-muted">Barcode and sticker generator</small></figcaption>
+            </figure>
+          </div>
+          <div class="col-12 col-md-6">
+            <figure class="card">
+              <img src="/assets/squarefare-3.png" class="card-img-top" alt="Scan to prep view with quantities">
+              <figcaption class="card-body py-2"><small class="text-muted">Scan to prep view with quantities</small></figcaption>
+            </figure>
+          </div>
+          <div class="col-12 col-md-6">
+            <figure class="card">
+              <img src="/assets/squarefare-4.png" class="card-img-top" alt="Production dashboard">
+              <figcaption class="card-body py-2"><small class="text-muted">Production dashboard</small></figcaption>
+            </figure>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Back link to Home tiles -->
+      <div class="mt-4">
+        <a class="btn btn-outline-primary btn-sm" href="../index.html">Back to Projects</a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container"><p class="m-0 text-center text-white">© Kevin Cong</p></div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
