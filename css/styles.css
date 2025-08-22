@@ -10792,6 +10792,22 @@ textarea.form-control-lg {
     font-size: 1.5rem !important;
   }
 }
+footer a {
+  text-decoration: none;  /* removes underline */
+}
+
+footer a:hover {
+  color: #0d6efd;  /* optional hover color */
+}
+footer a {
+  text-decoration: none;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+footer a:hover {
+  transform: scale(1.2);
+  color: #0d6efd; /* or any accent color */
+}
 @media print {
   .d-print-inline {
     display: inline !important;
